@@ -26,3 +26,4 @@
 3. git checkout main (cambio de rama)
 4. git merge feature/modificaciones (desde main mezclar cambios)
 5. git branch -d feature/modificaciones (Eliminar rama)
+6. git log --oneline (ver cambios y ramas en oneline)
