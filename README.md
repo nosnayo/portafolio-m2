@@ -15,4 +15,7 @@
 8. git remote -v  (ver ambos metodo fetch y push disponibles)
 9. git branch -M main  (cambio de rama)
 10. git log --> ver cambios y version
-11. git push origin main  (envia los cambios o version a la rama main o master)
+11. git push origin main  (envia los cambios o version a la rama main o master )
+"YA CONFIGURADO EL ORIGIN , OTROS CAMBIOS"
+7.  git push origin main  (envia los cambios o version a la rama main o master )
+8. git log (ver que ambas ramas estan actualizadas.)
