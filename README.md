@@ -19,3 +19,8 @@
 * "YA CONFIGURADO EL ORIGIN , OTROS CAMBIOS"
 7.  git push origin main  (envia los cambios o version a la rama main o master )
 8. git log (ver que ambas ramas estan actualizadas.)
+
+*USO DE RAMAS
+1. git checkout -b feature/modificaciones
+2. git branch (ver ramas, difurcaciones)
+3. git checkout main (cambio de rama)
