@@ -24,3 +24,4 @@
 1. git checkout -b feature/modificaciones
 2. git branch (ver ramas, difurcaciones)
 3. git checkout main (cambio de rama)
+4. git merge feature/modificaciones (desde main mezclar cambios)
