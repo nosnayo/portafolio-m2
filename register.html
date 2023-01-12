@@ -31,18 +31,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./carrito.html"
-                ><i class="fa-solid fa-cart-shopping"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="cantidad-productos">0</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./login.html">Login</a>
+                <a class="nav-link active" aria-current="page" href="./login.html">Login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./register.html">Register</a>
@@ -51,13 +43,24 @@
         </div>
       </div>
     </nav>
-    <!-- LISTADO DE PRODUCTOS -->
+
     <main class="container">
-      <section id="productos">
-        <h1 class="text-center my-5">LISTADO DE PRODUCTOS</h1>
-        <div class="row">
-          <!-- CARGAR PRODUCTOS DE FORMA DINAMICA -->
-        </div>
+      <section id="login">
+        <h1 class="text-center my-5">Registro de usuario</h1>
+
+        <section>
+            <form id="form-register">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" name="nombre" id="register-nombre" class="form-control my-1">
+                <label for="password" class="form-label">password</label>
+                <input type="password" name="password" id="register-password" class="form-control my-1" >
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" id="register-email" class="form-control my-1" >
+                <br>
+                <button type="submit" class="btn btn-primary">Registrar</button>
+                <button type="reset" class="btn btn-warning">Limpiar</button>
+            </form>
+        </section>
       </section>
     </main>
 
@@ -71,7 +74,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-    <script src="./assets/js/productos.js"></script>
-    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/login.js"></script>
   </body>
 </html>

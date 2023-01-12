@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,18 +31,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./carrito.html"
-                ><i class="fa-solid fa-cart-shopping"></i
-              ></a>
+              <a class="nav-link active" aria-current="page" href="./carrito.html">
+              <i class="fa-solid fa-cart-shopping"></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="cantidad-productos">0</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./login.html">Login</a>
+                <a class="nav-link" href="./login.html">Login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./register.html">Register</a>
@@ -51,12 +50,37 @@
         </div>
       </div>
     </nav>
-    <!-- LISTADO DE PRODUCTOS -->
+
     <main class="container">
-      <section id="productos">
+      <section id="productos-carrito">
         <h1 class="text-center my-5">LISTADO DE PRODUCTOS</h1>
+
+        <div class="d-flex justify-content-end">
+            <button class="btn btn-danger" id="btn-vaciar">Vaciar carrito</button>
+        </div>
+        
         <div class="row">
-          <!-- CARGAR PRODUCTOS DE FORMA DINAMICA -->
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">SKU</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio normal</th>
+                <th scope="col">Descuento</th>
+                <th scope="col">Precio Unitario</th>
+                <th scope="col">cantidad</th>
+                <th scope="col">Precio total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- CARGAR PRODUCTOS DE FORMA DINAMICA -->
+            </tbody>
+          </table>
+          <label for="cupon"><strong>Cupon descuento:</strong></label>
+          <input type="text" name="cupon" id="input-cupon">
+          <button id="btn-descuento" class="btn btn-primary my-2">Aplicar descuento</button>
+          <p id="precio-total" class="text-end"></p>
         </div>
       </section>
     </main>
@@ -72,6 +96,6 @@
     ></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     <script src="./assets/js/productos.js"></script>
-    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/carrito.js"></script>
   </body>
 </html>
