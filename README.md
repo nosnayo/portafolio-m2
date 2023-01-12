@@ -25,3 +25,4 @@
 2. git branch (ver ramas, difurcaciones)
 3. git checkout main (cambio de rama)
 4. git merge feature/modificaciones (desde main mezclar cambios)
+5. git branch -d feature/modificaciones (Eliminar rama)
